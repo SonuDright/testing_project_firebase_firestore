@@ -1,0 +1,81 @@
+import 'package:flutter/material.dart';
+
+class HomePageSqLite extends StatefulWidget {
+  const HomePageSqLite({super.key});
+
+  @override
+  State<HomePageSqLite> createState() => _HomePageSqLiteState();
+}
+
+class _HomePageSqLiteState extends State<HomePageSqLite> {
+
+  TextEditingController nameController = TextEditingController();
+  TextEditingController emailController = TextEditingController();
+  TextEditingController phoneController = TextEditingController();
+  TextEditingController passWordController = TextEditingController();
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SafeArea(child: Column(children: [
+        SizedBox(height: 30,),
+        Center(child: Text("Insert Data",style: TextStyle(color: Colors.black,fontSize: 30,fontWeight: FontWeight.bold),)),
+        SizedBox(height: 20,),
+        Center(
+          child: TextField(
+            controller: nameController,
+            keyboardType: TextInputType.name,
+            decoration: InputDecoration(
+                labelText: "Enter Your Name",
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(10)),
+                )
+            ),),
+        ),
+        Center(
+          child: TextField(
+            controller: emailController,
+            keyboardType: TextInputType.emailAddress,
+            decoration: InputDecoration(
+                labelText: "Enter Your Email",
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(10)),
+                )
+            ),),
+        ),
+        Center(
+          child: TextField(
+            controller: phoneController,
+            keyboardType: TextInputType.number,
+            decoration: InputDecoration(
+                labelText: "Enter Your Phone",
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(10)),
+                )
+            ),),
+        ),
+        Center(
+          child: TextField(
+            controller: passWordController,
+            keyboardType: TextInputType.number,
+            decoration: InputDecoration(
+                labelText: "Enter Your Phone",
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(10)),
+                )
+            ),),
+        ),
+        SizedBox(height: 20,),
+        Center(
+          child: ElevatedButton(onPressed: () {
+
+            var db =
+
+          }, child: Text("Save Data")),
+        )
+
+
+
+      ],)),
+    );
+  }
+}

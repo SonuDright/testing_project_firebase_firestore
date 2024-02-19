@@ -1,0 +1,105 @@
+{
+  "project_info": {
+    "project_number": "387706165372",
+    "project_id": "crudfirestore-f14dc",
+    "storage_bucket": "crudfirestore-f14dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:387706165372:android:8fb60c9154630e900e51f9",
+        "android_client_info": {
+          "package_name": "com.example.firebase_firestore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClbSr6gn8UFAHdRaz_t7U_aNUuKw-csQg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:387706165372:android:3b7715480fd0e4a70e51f9",
+        "android_client_info": {
+          "package_name": "com.example.firebase_model"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClbSr6gn8UFAHdRaz_t7U_aNUuKw-csQg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:387706165372:android:cf93b8948f17dcda0e51f9",
+        "android_client_info": {
+          "package_name": "com.example.firebasestore_data"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClbSr6gn8UFAHdRaz_t7U_aNUuKw-csQg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:387706165372:android:68a50f65d2ae492d0e51f9",
+        "android_client_info": {
+          "package_name": "com.example.untitled"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClbSr6gn8UFAHdRaz_t7U_aNUuKw-csQg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:387706165372:android:9360dfb74315a8c90e51f9",
+        "android_client_info": {
+          "package_name": "com.example.zomato"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClbSr6gn8UFAHdRaz_t7U_aNUuKw-csQg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
