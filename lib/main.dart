@@ -1,7 +1,7 @@
 
-
+import 'package:firebase_firestore/test_mediya_queari.dart';
 import 'package:flutter/material.dart';
-import 'crud_apration/insert_crud.dart';
+import 'api/test_api_call.dart';
 import 'firebase_options.dart';
 
 
@@ -25,10 +25,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'MyApp',
       theme: ThemeData(
+
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: HomePageInsertCrud(),
+      home: HomeApiScreen(),
 
     );
   }

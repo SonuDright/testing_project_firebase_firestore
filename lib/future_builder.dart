@@ -28,6 +28,7 @@ return imgUrl;
               width: 380,
               color: Colors.orange,
               child: FutureBuilder(
+
                   future: getData(),
                   builder: (context, snapshot) {
                     if(snapshot.connectionState==ConnectionState.waiting){

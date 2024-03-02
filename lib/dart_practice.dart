@@ -1259,30 +1259,30 @@ import 'dart:io';
 
 /////1 se 100 tak prime number while loop///
 
-// void main(){
-//  var a = 1;
-//  while(a<=100){
-//
-//    var b= 1;
-//    var count = 0;
-//    while(b<=a){
-//      if(a%b==0){
-//        count++;
-//      }
-//      b++;
-//    }
-//    if(count<=2){
-//
-//      print("$a is prime number");
-//    }
-//    else{
-//      print("$a is not prime number");
-//    }
-//    a++;
-//
-//  }
-//
-// }
+void main(){
+ var a = 1;
+ while(a<=100){
+
+   var b= 1;
+   var count = 0;
+   while(b<=a){
+     if(a%b==0){
+       count++;
+     }
+     b++;
+   }
+   if(count<=2){
+
+     print("$a is prime number");
+   }
+   else{
+     print("$a is not prime number");
+   }
+   a++;
+
+ }
+
+}
 
 
 /////1 se 100 tak prime number for loop///
@@ -1380,8 +1380,8 @@ import 'dart:io';
 // }
 
 
-/////////     max  and  min  ////////////
-//
+///////     max  and  min  ////////////
+
 //
 // void main(){
 //   var num = [11,23,45,65,34,89,14,34,43,10,20,];
@@ -1888,28 +1888,28 @@ import 'dart:io';
 // }
 
 
-class Number{
-
-  int? num;
-  int? num1;
-  int? s;
-
-  Number(this.num1,this.num,[this.s=4]);
-  Number.ten(this.num,this.num1);
-  addNumber(){
-    var r= num!+num1!+s!;
-    return(r);
-
-  }
-
-}
-
-main(){
-
-  var n = Number.ten(2,4,);
-  print( n.addNumber());
-
-}
+// class Number{
+//
+//   int? num;
+//   int? num1;
+//   int? s;
+//
+//   Number(this.num1,this.num,[this.s=4]);
+//   Number.ten(this.num,this.num1);
+//   addNumber(){
+//     var r= num!+num1!+s!;
+//     return(r);
+//
+//   }
+//
+// }
+//
+// main(){
+//
+//   var n = Number.ten(2,4,);
+//   print( n.addNumber());
+//
+// }
 
 
 

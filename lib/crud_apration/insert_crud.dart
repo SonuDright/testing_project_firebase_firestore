@@ -48,8 +48,11 @@ class _HomePageInsertCrudState extends State<HomePageInsertCrud> {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
+
       body: SafeArea(
+
         child: ListView(
           children: [
             const SizedBox(
@@ -97,8 +100,9 @@ class _HomePageInsertCrudState extends State<HomePageInsertCrud> {
               ),
             ),
             Center(
+
               child: Padding(
-                padding:   EdgeInsets.only(left: 20, right: 20, top: 20),
+                padding: EdgeInsets.only(left: 20, right: 20, top: 20),
                 child: TextField(
                   keyboardType: TextInputType.phone,
                   controller: phoneController,
@@ -133,7 +137,6 @@ class _HomePageInsertCrudState extends State<HomePageInsertCrud> {
               child: ElevatedButton(
                   onPressed: () {
                     userInsertData();
-
                   },
                   child: const Text("Insert Now")),
             ),
@@ -145,7 +148,6 @@ class _HomePageInsertCrudState extends State<HomePageInsertCrud> {
                   },
                   child: Text("View")),
             ),
-
 
           ],
         ),
