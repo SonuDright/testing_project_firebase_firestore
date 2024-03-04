@@ -1,8 +1,7 @@
 
-import 'package:firebase_firestore/test_mediya_queari.dart';
 import 'package:flutter/material.dart';
-import 'api/test_api_call.dart';
 import 'firebase_options.dart';
+import 'image_upload.dart';
 
 
  main() async {
@@ -29,7 +28,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: HomeApiScreen(),
+      home: ProfileScreen(),
 
     );
   }

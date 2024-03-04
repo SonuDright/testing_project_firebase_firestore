@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
@@ -23,18 +25,18 @@ class _HomePageViewDataState extends State<HomePageViewData> {
           Container(
             height: 600,
             child: FutureBuilder(
+
               future: auth.get(),
               builder: (context, snapshot) {
                 var data = snapshot.data!.docs;
                 return ListView.builder(
                   itemCount: data.length,
                   itemBuilder: (context, index) {
-                    // var ducment = data[index];
+                     var doucment = data[index];
                     return Column(
                       children: [
                         Row(
                           children: [
-
                             Container(
                               height: 350,
                               width: 400,
@@ -46,7 +48,10 @@ class _HomePageViewDataState extends State<HomePageViewData> {
                                       Border.all(width: 3, color: Colors.red)),
                               child: Column(
                                 children: [
-                                  Text("cmndcbn")
+                             Text(doucment.data()["name"].toString()),
+                             Text(doucment.data()["email"].toString()),
+                             Text(doucment.data()["phone"].toString()),
+                             Text(doucment.data()["passWord"].toString()),
                                 ],
                               ),
                             ),

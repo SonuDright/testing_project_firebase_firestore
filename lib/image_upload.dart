@@ -3,6 +3,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
+
+
 class ProfileScreen extends StatefulWidget {
 
   const ProfileScreen({super.key});
@@ -22,7 +24,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          // Image.network("https://firebasestorage.googleapis.com/v0/b/crudfirestore-f14dc.appspot.com/o/uploadImage%2Fxyz123.jpg?alt=media&token=62c477f2-3ddc-445d-a474-6196f2ad4564"),
+           Image.network("https://firebasestorage.googleapis.com/v0/b/crudfirestore-f14dc.appspot.com/o/uploadImage%2Fxyz123.jpg?alt=media&token=62c477f2-3ddc-445d-a474-6196f2ad4564"),
           Container(
             height: 200,
             width: 200,

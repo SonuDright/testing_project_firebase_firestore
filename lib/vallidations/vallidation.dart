@@ -138,17 +138,13 @@ class _HomeValliDationState extends State<HomeValliDation> {
             ),
           ),
           SizedBox(height: 10,),
-          Padding(
-            padding: const EdgeInsets.only(left: 20,right: 20),
-            child: Center(
-              child: TextFormField(
+          Padding(padding: const EdgeInsets.only(left: 20,right: 20),
+            child: Center(child: TextFormField(
                 controller: passWordController,
                 keyboardType: TextInputType.text,
-                decoration: InputDecoration(
-                    labelText: "Enter Your PassWord",
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(10)),
-                    )
+                decoration: InputDecoration(labelText: "Enter Your PassWord",
+                    border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(10)),
+                    ),
                 ),
               ),
             ),

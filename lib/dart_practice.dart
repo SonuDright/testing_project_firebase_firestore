@@ -1,6 +1,5 @@
 import 'dart:io';
 
-
 // void main() {
 // var list = [10,20,30,40,50,60,];
 //   list.add(70);
@@ -54,11 +53,7 @@ import 'dart:io';
 
 // }
 
-
-
 // //////Map//////////
-
-
 
 // void main(){
 //   Map <String,String> map1 =  {
@@ -87,9 +82,7 @@ import 'dart:io';
 //   print(map2.runtimeType);
 //   print(map2);
 
-
 // }
-
 
 // void main(){
 //   var map1 = {
@@ -100,7 +93,6 @@ import 'dart:io';
 
 //   print(map1);
 // }
-
 
 // void main(){
 //   var map = Map<int,String>();
@@ -119,7 +111,6 @@ import 'dart:io';
 //   print(map["2"]);
 // }
 
-
 // void main(){
 //   var map = Map<dynamic,dynamic>();
 //   map["1"]="Hello";
@@ -128,38 +119,32 @@ import 'dart:io';
 //   print(map);
 // }
 
-
 // void main(){
-//   Map <String,String> map1 = {
 
+//   Map <String,String> map1 = {
 //   "name":  "Sonu Dright",
 //     "id":"1520",
 //     "Phone No.":"9631585973",
 //     "Adress":"Bhatha",
-
 //   };
-
 //   map1["Dob"]= "22-10-98";
 //   print(map1);
 //   print(map1["id"]);
 // }
-
 // void main(){
 //   while(1<=10){
 //      print(a);
 //   }
-// }
+//
 
-
-
-
-// /////////////List//////////
+///////////// List //////////
 
 // void main(){
+
 //  var list = [5,2,6,8,9,6,5,2,5,4,8,];
 //   var dups = [];
 //   for(int a in list){
-//     if(!dups.contains(a)){
+//     if(dups.contains(a)){
 //       dups.add(a);
 //     }
 //   }
@@ -180,6 +165,22 @@ import 'dart:io';
 //   print(dups);
 // }
 
+// void main(){
+//   var list = [2,4,6,7,6,3,23,21,20,24,26,28,4,6,8,9,0,11,13,14,12,15,1];
+//   var dup = [];
+//   for(int a in list ){
+//     if(!dup.contains(a)){
+//       dup.add(a);
+//     }
+//     else{
+//
+//     }
+//
+//
+//   }
+//   print(list);
+//
+// }
 
 // //////febnachishrise/////
 
@@ -195,7 +196,18 @@ import 'dart:io';
 //   }
 // }
 
-// //////swap////
+// void main(){
+//   var a =0;
+//   var b = 1;
+//   for(int i = 0; i<=10; i++ ){
+//     print(a);
+//     var c = a+b;
+//     a = b;
+//     b = c;
+//   }
+// }
+
+// //////Swap////
 
 // void main(){
 
@@ -257,7 +269,7 @@ import 'dart:io';
 //   }
 //   print(b);
 
-//   /
+//
 //   for(var item in data){
 //     if(dup.contains(item)){
 //       dup.add(item);
@@ -270,20 +282,67 @@ import 'dart:io';
 //   print("d"+"$dup");
 // }
 
-
-
 // //////revers////
 
-
+// void main(){
+//   var num = [1,3,5,7,9,5,3,11,10,23,43,56,76,88,99,];
+//   var rev = [];
+//   for(int a = num.length-1; a>=0;a--){
+//     rev.add(num[a]);
+//   }
+//   print(rev);
+// }
 
 // void main(){
+//   var num = [1,2,54,8,4,9,11,22,10,];
+//   var rev = [];
+//   for(int a = num.length-1; a>=0; a--){
+//   rev.add(num[a]);
+//
+//   }
+//   print(rev);
+//
+// }
 
+// void main(){
+//
 //   var a = [1,4,10,20,15];
 //   var b = [];
-//   for(int i = a.length-1;i>=0;i--){
+//   for(int i = a.length-1; i>=0;i--){
 //     b.add(a[i]);
 //   }
 //   print(b);
+
+// }
+
+// void main(){
+//   var list = [1,3,5,7,9,12,15];
+//   var rev = [];
+//   for(int  a = list.length-1; a>=0; a--){
+//     rev.add(list[a]);
+//   }
+//   print(rev);
+// }
+
+// void main(){
+//   var list = [1,2,4,6,9,11,13,15,17,20];
+//   var re = [];
+//   for(int a = list.length-1; a>=0; a--){
+//     re.add(list[a]);
+//   }
+//   print(re);
+//
+// }
+
+// void main(){
+//   var list = [1,2,4,6,9,11,13,15,17,20];
+//   var news = [];
+//   for(int a = list.length-1; a>0; a--){
+//     news.add(list[a]);
+//
+//   }
+//   print(news);
+//
 // }
 
 // void main(){
@@ -300,10 +359,10 @@ import 'dart:io';
 //   }
 // }
 
-
 // ////////Missing  number///////
 
 // void main(){
+//
 //   var num = [1,3,5,7,9,12,15];
 //   var newList = [];
 //   for(int i = 1; i<=15; i++ ){
@@ -313,22 +372,116 @@ import 'dart:io';
 //     else{
 //       newList.add(i);
 //       print("$i is missing");
-
 //     }
-
 //   }
 //   print(newList);
 // }
 
+// void main(){
+//   var list = [1,2,4,6,9,11,13,15,17,20];
+//   var newList = [];
+//   for(int a = 1; a<=20; a++){
+//   if(list.contains(a)){
+//     print("$a is not missint                                                                                                                    a is Missing ");
+//
+//   }
+//   else{
+//     newList.add(a);
+//     print('$a is missing ' );
+//   }
+//
+//   }
+//   print(newList);
+// }
+
+///     Missing Nuimber   /////////////
+
+// void main(){
+//   var list = [1,2,4,6,9,11,13,15,17,20];
+//   var newList = [];
+// for(int a = 1; a<=20; a++){
+//   if(list.contains(a)){
+//     print("$a is no  missing number");
+//   }
+//   else{
+//     newList.add(a);
+//     print("$a is missing number");
+//   }
+//
+// }
+// print(newList);
+// }
+
+// void main(){
+//   var list = [1,2,4,6,9,11,13,15,17,20];
+//   var newList = [];
+//   for(int a = 1; a<=20; a++){
+//   if(list.contains(a)){
+//     print("$a is not missing");
+//   }
+//   else{
+//     newList.add(a);
+//     print("$a is missing");
+//   }
+//   }
+//   print(newList);
+// }
+
+// void main(){
+//
+//   var list = [1,2,4,6,9,11,13,15,17,20];
+//   var newList = [];
+//   for(int a = 1; a<=20; a++){
+//
+//   if(list.contains(a)){
+//
+//     print("$a  is not missing");
+//
+//   }
+//   else{
+//     newList.add(a);
+//
+//   }
+//   }
+//   print(newList);
+//
+//   }
 
 // //////////////Duplicate Value/////////////
 
+// void main(){
+//   var list = [2,4,7,3,8,9,11,13,21,23,2,4,5,7,8,20,32,54,45,43,];
+//   var newList = [];
+//   for(int a = 0; a<list.length; a++){
+//     for(int b = a+1; b<list.length; b++){
+//       if(list[a]==list[b]){
+//         newList.add(list[a]);
+//       }
+//     }
+//   }
+//   print(newList);
+// }
 
 // void main(){
-//   var num1  = [1,2,3,5,7,9,3,2,10,2];
-
+//   var list = [2,4,7,3,8,9,11,13,21,23,2,4,5,7,8,20,32,54,45,43,];
 //   var dup = [];
+//   for(int a = 0 ; a<list.length; a++){
+//     for(int b= a+1; b<list.length; b++){
+//       if(list[a]==list[b]){
+//         dup.add(list[a]);
+//       }
+//     }
+//   }
+//   print(dup);
 
+// }
+
+//
+// void main(){
+//   var num1  = [1,2,3,5,7,9,3,2,10,2];
+//
+//   var dup = [];
+//
 //   for(int i=0; i<num1.length; i++){
 //      for(int j=i+1; j<num1.length; j++){
 //         if(num1[i]==num1[j]){
@@ -339,6 +492,19 @@ import 'dart:io';
 //   print(dup);
 // }
 
+// void main(){
+//   var list = [2,4,7,3,8,9,11,13,21,23,2,4,5,7,8,20,32,54,45,43,];
+//   var dup = [];
+//   for(int a = 0; a<list.length; a++){
+//     for(int b = a+1; b<list.length; b++){
+//       if(list[a]==list[b]){
+//         dup.add(list[a]);
+//
+//       }
+//     }
+//   }
+//   print(dup);
+// }
 
 // void main(){
 //   var list = [4,7,9,12,16,4,6,8,9,3,2,3,5,7,11,15,17,19,20,22,23,21,25];
@@ -356,11 +522,15 @@ import 'dart:io';
 // void main(){
 //     var list = [4,7,9,12,16,4,6,8,9,3,2,3,5,7,11,15,17,19,20,22,23,21,25];
 //   var uniq = [];
-
-//   for(int  )
+//   for(int a = 0; a<list.length;a++){
+//     for(int b = a+1; b<list.length; b++){
+//       if(list[a]==list[b]){
+//         uniq.add(list[a]);
+//       }
+//     }
+//   }
+//   print(uniq);
 // }
-
-
 
 // void main(){
 //   var list = [10,50,55,30,18,10,55,28,18,50];
@@ -389,7 +559,6 @@ import 'dart:io';
 //   print(uni);
 // }
 
-
 // void main(){
 
 //   var f = List.filled(8,true);
@@ -400,19 +569,13 @@ import 'dart:io';
 
 // }
 
-
-
 // class myClass{
 
-
 //   void printName(){
-
 
 //     print("Sonu Dright");
 //   }
 // }
-
-
 
 // void main(){
 //   var list = [2,4,5,67,44,];
@@ -429,9 +592,6 @@ import 'dart:io';
 
 // }
 
-
-
-
 // void main(){
 //   var list = [10,20,34,56,2,5,8];
 //   var list1 = [50,65,34,23,78,98,11,];
@@ -439,15 +599,33 @@ import 'dart:io';
 //     list1.add(a);
 //   }
 //   print(list1);
+//   print(list);
 // }
-
-
 
 // //////////Asending  /////////
 
 // void main(){
 //   var num = [10,20,12,23,21,32,24,55,33,14,16,5,7,9,3,];
+//   for(int a = 0; a<num.length; a++){
+//     for(int b =0; b<=a; b++){
+//       if(num[a]<= num[b]){
+//         var x = num[a];
+//         num[a]= num[b];
+//         num[b]= x;
+//       }
+//
+//     }
+//   }
+//   for(int  c in num){
+//     print(c);
+//   }
+//
+// }
 
+// void main(){
+//
+//   var num = [10,20,12,23,21,32,24,55,33,14,16,5,7,9,3,];
+//
 //   for(int a = 0; a<num.length; a++ ){
 //     for(int b = 0; b<=a; b++){
 //       if(num[a] <=num[b]){
@@ -461,7 +639,6 @@ import 'dart:io';
 //     print(c);
 //   }
 // }
-
 
 // ////////Desending//////////
 
@@ -482,7 +659,6 @@ import 'dart:io';
 //   }
 // }
 
-
 // void main(){
 //   var num = [10,20,12,23,21,32,24,55,33,14,16,5,7,9,3,];
 
@@ -490,17 +666,112 @@ import 'dart:io';
 
 // /////// maximum number ///////
 
-
 // void main(){
-//  var num = [6,3,8,5,4,9,8,12,15,18,];
-//  var max = num[0];
-//  for(int a = 0; a<num.length; a++){
-//    if(num[a]>max){
+//  var num = [6,3,8,5,4,900,108,12,15,18,20];
+//  var max = num[1];
+//
+//  for(int a = 1; a<num.length; a++){
+//
+//    if(num[a]>=max){
+
 //      max = num[a];
 //    }
 //  }
 //  print(max);
+//
 //  }
+
+//
+// void main(){
+//   var num = [6,3,8,5,4,900,108,12,15,18,20];
+//   var max = 0;
+//   var s=0;
+//   for(int a = 1; a<num.length; a++){
+//
+//     if(num[a]>=max){
+//       s=max;
+//       max = num[a];
+//     }
+//
+//     else if(max>num[a] && s<num[a]){
+//       s=num[a];
+//     }
+//   }
+//
+//    print(max);
+//   print(s);
+//
+// }
+
+// void main(){
+//   var num = [1,3,66,4,22,6,55,3,7,9,88,79,70,90];
+//   var max = 0;
+//   var s = 0;
+//   for(int a = 1; a<num.length; a++){
+//   if(num[a]>= max){
+//     s = max;
+//     max = num[a];
+//   }
+//   else if(max>num[a] && s<num[a]){
+//     s = num[a];
+//   }
+//   }
+//   print(max);
+//   print(s);
+// }
+
+// void main(){
+//   var num = [6,3,8,5,4,900,108,12,15,18,20];
+//   var max = 0;
+//   var s = 0;
+//   for(int a = 1; a<num.length; a++){
+//     if(num[a]>=max){
+//      s = max;
+//      max = num[a];
+//     }
+//     else if (max>num[a] && s<num[a]){
+//       s = num[a];
+//
+//     }
+//
+//   }
+//
+//   print(s);
+// }
+
+// void main(){
+//   var num = [6,3,8,5,4,900,108,12,15,18,20];
+//  var min =0;
+//  var s= 0;
+//  for(int a= 1; a<num.length; a++){
+//    if(num[a]<=min){
+//      s = min;
+//      min= num[a];
+//    }
+//  }
+// }
+
+// void main(){
+//   var num = [2,4,67,89,22,11,44,56,4,77,8,6,5];
+//   var max = num[0];
+//   for(int a = 1; a < num.length; a++){
+//     if(num[a]>max){
+//       max = num[a];
+//     }
+//   }
+//   print(max);
+// }
+
+// void main(){
+//   var num = [2,4,67,89,22,11,44,56,4,77,8,6,5];
+//   var min = num[0];
+//   for(int a = 1; a<num.length; a++){
+//     if(num[a]<min){
+//       min = num[a];
+//     }
+//   }
+//   print(min);
+// }
 
 // void  main(){
 //  var n = 7;
@@ -511,8 +782,6 @@ import 'dart:io';
 //   print(count);
 // }
 
-
-
 //  void main(){
 //   var num = 7;
 //   var count=1;
@@ -521,7 +790,6 @@ import 'dart:io';
 //   }
 //   print(count);
 //  }
-
 
 // void main(){
 //   var n = 21;
@@ -536,8 +804,6 @@ import 'dart:io';
 //   }
 //   print("$n is no prime number");
 // }
-
-
 
 // void main(){
 //  var num = [20,50,30,40,10,25] ;
@@ -561,7 +827,6 @@ import 'dart:io';
 //   print(sum/list.length);
 // }
 
-
 // void main(){
 //   var num = [20,50,30,40,10,25] ;
 //   var list = [10,30,50,64,23,54,30];
@@ -575,11 +840,7 @@ import 'dart:io';
 //   print(sum/list.length);
 // }
 
-
-
 // //////missing  number/////////
-
-
 
 // void main(){
 //   var num = [1,3,5,7,9,12,15];
@@ -598,8 +859,6 @@ import 'dart:io';
 //   print(newList);
 // }
 
-
-
 // void main(){
 //  var num = [1,3,5,7,11,14,16];
 //   var newList = [];
@@ -610,8 +869,6 @@ import 'dart:io';
 //   }
 //   print(newList);
 // }
-
-
 
 // void main(){
 //   var  num = [2,4,5,7,8,12,13,10];
@@ -625,14 +882,12 @@ import 'dart:io';
 //     //  newList.add(a);
 //     }
 
-
 //   }
 //  // print(newList);
 
 // }
 
-
-///duplicate number/////
+///  duplicate number  /////
 
 // void main(){
 //   var list = [2,4,7,5,8,4,6,2,5,9,11,23,9,6,11,55,44,65,50,55,50,];
@@ -664,8 +919,6 @@ import 'dart:io';
 //
 // }
 
-
-
 // void main(){
 //   var list = [2,3,4,5,6,7,8,11,22,33,12,];
 //   var num = [10,30,50,40,20,11,23,45,65,80];
@@ -677,14 +930,8 @@ import 'dart:io';
 //   print(sum);
 // }
 
-
-
-
-
-
 // void main(){
 //    Map <String,dynamic> map1 = {
-
 
 //     "email" : "sonudright@gmail.com",
 //      "phone" : 9631585973,
@@ -720,8 +967,6 @@ import 'dart:io';
 
 //   }
 
-
-
 // void main(){
 //   var map = {
 //   "first": 10,
@@ -736,36 +981,116 @@ import 'dart:io';
 //   print(map.containsKey("Secend"));
 // }
 
+///  1 se 100 tak  prime number with for loop /////
+
 // void main(){
-//   var n = 100;
-//   var a = 1;
-//   var check = 0;
-//   do{
-//     if(a%2==0){
-//       check++;
+//   for(int a = 1; a<=100; a++){
+//     var check = 0;
+//     for(int b = 1; b<=100; b++){
+//       if(a%b==0){
+//         check++;
+//       }
 //     }
-//     if(check <=2){
-//      print("$a is prime number") ;
+//     if(check<=2){
+//     print("$a is prime number");
 //     }
 //     else{
-//       print("$a is not prime number") ;
+//       print("$a is   not prime number");
 //     }
 //   }
-//   while(a<=n);
+//
 // }
 
+///  1 se 100 tak  prime number with Do while loop /////
+
+///  1 se 100 tak  prime number with  do  while loop /////
+// void  main(){
+//   var a = 1;
+//   do{
+//     var check = 0;
+//     var b = 1;
+//     do{
+//       if(a%b==0){
+//         check++;
+//       }
+//       b++;
+//     }
+//     while(b<=a);
+//     if(check<=2){
+//       print("$a is prime number");
+//     }
+//     else{
+//       print("$a is not prime number");
+//     }
+//     a++;
+//   }
+//   while(a<=100);
+// }
+
+///  1 se 100 tak  prime number with while loop /////
 
 // void main(){
 //   var a = 1;
-//   var b = 2;
+//   while(a<=100){
+//     var check = 0;
+//     var b = 1;
+//     while(b<=a){
+//       if(a%b==0){
+//         check++;
+//       }
+//       b++;
+//     }
+//     if(check<=2){
+//       print("$a is prime number");
+//     }
+//     else{
+//       print("$a is  not  prime number");
+//     }
+//     a++;
+//   }
+// }
 
-//    b = a+(a=b)-b;
+///  1 se 100 tak  prime number with for loop /////
 
+// void main(){
+//   for(int a = 1; a<=100; a++ ){
+//     var check = 0;
+//  for(int b = 1; b<=100; b++) {
+//    if(a%b ==0){
+//     check++;
+//    }
+//  }
+//  if(check<=2){
+//    print("$a is prime number");
+//  }
+//  else{
 
-//   print("a = $a");
-//   print("b = $b");
-// }`1
-// //////////1-
+//    print("$a is  not prime number");
+//  }
+//   }
+
+// }
+
+// void main(){
+//   var a = 1;
+//   while(a<=100){
+//     var check =0;
+//     var b = 1;
+//     while(b<=a){
+//       if(a %b==0){
+//         check++;
+//       }
+//       b++;
+//     }
+//     if(check<=2){
+//       print("$a is prime number");
+//     }
+//     else{
+//       print("$a is not prime number");
+//     }
+//     a++;
+//   }
+// }
 
 // void main(){
 //   var a = 1;
@@ -805,6 +1130,20 @@ import 'dart:io';
 //   }
 // }
 
+// void main(){
+//   var a = 1;
+//   do{
+//     var check = 0;
+//     var b = 1;
+//     do{
+//       if(a%b==0){
+//         check++;
+//       }
+//       b++;
+//     }
+//     while(b<=a);
+//   }
+//   }
 
 // void main(){
 //  var a = 1;
@@ -831,7 +1170,6 @@ import 'dart:io';
 
 // ////////for loop///////////
 
-
 // void main(){
 //   for(int a = 1; a<=100; a++){
 //     var count = 0;
@@ -849,8 +1187,7 @@ import 'dart:io';
 //   }
 // }
 
-
-// //////While loop///////////
+// //////   While loop   ///////////
 
 // void main(){
 //   var a =1;
@@ -874,7 +1211,6 @@ import 'dart:io';
 //   }
 // }
 
-
 // void main(){
 //   var a = 1;
 //   var b = 5;
@@ -883,7 +1219,6 @@ import 'dart:io';
 //     var c = a*b;
 //     print(c);
 //     a++;
-
 
 //     }
 //   }
@@ -914,25 +1249,21 @@ import 'dart:io';
 // }
 
 
-// void main(){
-//   var a = 1;
-//   while(a<=10){
-//     var b = 2;
-//     while(b<=20){
-//       var c = a*b;
-//       stdout.write(c) ;
-//       b++;
-//       stdout.write("      ") ;
 
+// void main() {
+//   var a = 1;
+//   while (a <= 10) {
+//     var b = 5;
+//     while (b <= 20) {
+//       var c = a * b;
+//       stdout.write(c);
+//       b++;
+//       stdout.write("      ");
 //     }
 //     print("    ");
 //     a++;
 //   }
-
 // }
-
-
-
 
 // void main(){
 //   var list =  [4,5,7,9,1,2,12,14,23,45,17,15,20,];
@@ -941,11 +1272,7 @@ import 'dart:io';
 
 //   }
 
-
-
 // }
-
-
 
 // void main(){
 //   var a = 1;
@@ -961,10 +1288,8 @@ import 'dart:io';
 //   }
 // }
 
-
 // void main(){
 //   var n = [];
-
 
 //   for(int a = 1; a<=100; a++){
 //    var count =0;
@@ -978,26 +1303,19 @@ import 'dart:io';
 //      print(n);
 //   }
 
-
 // void main (){
-
-
 
 //   var n = [];
 //   for(int a = 1; a<=100; a++){
 //   n=[...n,a];
 //     }
 //   print(n);
-
 //   }
-
-
 
 // void main(){
 //   List<dynamic> c = [[[[[[[4,5,[6,8]]]]]]]];
 //   print(c[0][0][0][0][0][2][1]);
 // }
-
 
 // void main(){
 //   var num = [10,20,50,12,22,34,44,55];
@@ -1005,7 +1323,6 @@ import 'dart:io';
 //   (x) => print(x)
 //   );
 // }
-
 
 // void main(){
 //   var num = {10,20,50,12,22,34,44,55};
@@ -1023,17 +1340,12 @@ import 'dart:io';
 //  }
 // }
 
-
 // void main(){
 //   var n = 5;
 //   for(int a = 1; a<=10; a++){
 //     print(n*a);
 //   }
 // }
-
-
-
-
 
 // void main(){
 //   var n = 7;
@@ -1044,7 +1356,6 @@ import 'dart:io';
 //   a++;
 // }
 // }
-
 
 // void main(){
 //   var demo = {
@@ -1060,11 +1371,6 @@ import 'dart:io';
 //   (key, value) => print("$key $value")
 //   );
 // }
-
-
-
-
-
 
 // import 'dart:io';
 
@@ -1082,7 +1388,7 @@ import 'dart:io';
 //
 // }
 
-//////1 se 100 tak sum  do while se //////
+//////1 se 100 tak sum  do while se  sum//////
 
 // void main(){
 //   var a = 1;
@@ -1095,8 +1401,6 @@ import 'dart:io';
 //   print(sum);
 // }
 
-
-
 //////1 se 100 tak sum   while loop se //////
 
 // void main(){
@@ -1108,7 +1412,6 @@ import 'dart:io';
 //   }
 //   print(sum);
 // }
-
 
 //
 //   main(){
@@ -1129,9 +1432,7 @@ import 'dart:io';
 //   while(a<=10);
 // }
 
-
 ///////do while loop se 1 se 101 tak ginti////
-
 
 // void main(){
 //   var a = 1;
@@ -1160,10 +1461,6 @@ import 'dart:io';
 
 /// output 100 ///
 
-
-
-
-
 // void main(){
 //   var a = 1;
 // while(a<=10){
@@ -1180,8 +1477,17 @@ import 'dart:io';
 //
 // }
 
-
 /// 8 ka table   while loop se///
+
+// void main(){
+//   var a = 1;
+//   var b = 12;
+//   while(a<=10){
+//     var c = a*b;
+//     print(c);
+//     a++;
+//   }
+// }
 
 
 // void main(){
@@ -1194,9 +1500,79 @@ import 'dart:io';
 //   }
 // }
 
+/// 8 ka table   For loop se///
+
+// void main(){
+//   var a = 1;
+//   var b = 8;
+//   for(int a = 1; a<=10; a++){
+//   var c = a*b;
+//   print(c);
+//   }
+// }
 
 
 
+// void main(){
+//   var a = 1;
+//   var b = 5;
+//   for(int  a = 1; a<=10; a++){
+//     for(int b = 5;  b<=25; b++){
+//       var c = a*b;
+//       stdout.write("     ");
+//       print("   ");
+//       print(c);
+//
+//     }
+//   }
+//
+// }
+/// 8   se 25 tak ka table   do while loop se///
+
+// void main(){
+//   var a = 1;
+//   do{
+//     print("   ");
+//     var b = 3;
+//     do{
+//       var c =  a*b;
+//       stdout.write(c);
+//       stdout.write("    ");
+//       b++;
+//     }
+//     while(b<=28);
+//     print("  ");
+//     a++;
+//   }
+//   while(a<=10);
+// }
+
+
+
+
+
+
+// void main(){
+//   var a = 1;
+//   do{
+//     print("  ");
+//     var b = 5;
+//     do{
+//       var c = a*b;
+//       stdout.write(c);
+//       stdout.write("     ");
+//       b++;
+//     }
+//     while(b<=23);
+//     print("   ");
+//     a++;
+//   }
+//   while(a<=10);
+//
+// }
+
+
+/// 8 ka table   do while loop se///
 
 
 
@@ -1209,14 +1585,12 @@ import 'dart:io';
 //     var c = a*b;
 //     print(c);
 //     a++;
-//
 //   }
 //   while(a<=10);
 // }
 
 
 /////  5 se 40 tak ka table    while loop se ////
-
 
 // void main(){
 //   var a = 1;
@@ -1232,7 +1606,30 @@ import 'dart:io';
 //   a++;
 // }
 // }
-/////1 se 100 tak prime number  do while loop///
+/////1 se 100 tak prime number  do while loop///////
+
+// void main(){
+//   var a = 1;
+//   do{
+//     var check = 0;
+//     var b = 1;
+//     do{
+//      if(a%b==0){
+//        check++;
+//      }
+//      b++;
+//     }
+//     while(b<=a);
+//     if(check<=2){
+//       print("$a is prime number");
+//     }
+//     else{
+//       print("$a is prime not number");
+//     }
+//     a++;
+//   }
+//   while(a<=100);
+// }
 
 // void main(){
 //   var a = 1 ;
@@ -1259,31 +1656,30 @@ import 'dart:io';
 
 /////1 se 100 tak prime number while loop///
 
-void main(){
- var a = 1;
- while(a<=100){
-
-   var b= 1;
-   var count = 0;
-   while(b<=a){
-     if(a%b==0){
-       count++;
-     }
-     b++;
-   }
-   if(count<=2){
-
-     print("$a is prime number");
-   }
-   else{
-     print("$a is not prime number");
-   }
-   a++;
-
- }
-
-}
-
+// void main(){
+//  var a = 1;
+//  while(a<=100){
+//
+//    var b= 1;
+//    var count = 0;
+//    while(b<=a){
+//      if(a%b==0){
+//        count++;
+//      }
+//      b++;
+//    }
+//    if(count<=2){
+//
+//      print("$a is prime number");
+//    }
+//    else{
+//      print("$a is not prime number");
+//    }
+//    a++;
+//
+//  }
+//
+// }
 
 /////1 se 100 tak prime number for loop///
 
@@ -1304,10 +1700,6 @@ void main(){
 //   }
 //   }
 // }
-
-
-
-
 
 // void main(){
 //   var a = 1;
@@ -1379,7 +1771,6 @@ void main(){
 //
 // }
 
-
 ///////     max  and  min  ////////////
 
 //
@@ -1403,10 +1794,27 @@ void main(){
 //  print(min);
 // }
 
-
-
+// void main(){
+//   var num = [11,23,45,65,34,89,14,34,43,10,20,];
+//   var max = num[0];
+//   for(int a = 1; a<num.length; a++){
+//     if(num[a]>=max){
+//       max = num[a];
+//     }
+//   }
+//   var min = num[0];
+//   for(int b = 1; b<num.length; b++){
+//     if(num[b]<=min){
+//       min = num[b];
+//
+//     }
+//   }
+//   print(max);
+//   print(min);
+// }
 
 // void main(){
+
 //
 //   var b = 5;
 //   for(int a = 1; a<=10; a++){
@@ -1423,16 +1831,22 @@ void main(){
 //
 // }
 
-
 //////missing number //////
 
 // void main(){
-//   var num = [1,2,4,6,8,9,11,13,15,16,18,20];
+//   var num = [1,2,4,6,8,9,11,13,15,16,18,20,21];
 //   var list = [];
+//   for(int a = 1; a<=20; a++){
+//     if(num.contains(a)){
+//       print("$a is not missing number");
 //
+//     }
+//     else{
+//       list.add(a);
+//       print("$a is missing number ");
+//     }
+//   }
 // }
-
-
 
 // void main(){
 //   var num = [6,3,8,5,4,9,8,12,15,18,];
@@ -1444,8 +1858,6 @@ void main(){
 //   }
 //   print(max);
 // }
-
-
 
 //////switch  case ///////
 
@@ -1462,12 +1874,12 @@ void main(){
 //       print("Truck");
 //       break;
 //       default:
-//         print("Not Vailed");
+//         print("Not Vailed");-852.6
+//
 //
 //
 //   }
 // }
-
 
 // void main(){
 //   var months = "Tesla Car";
@@ -1488,9 +1900,40 @@ void main(){
 //   }
 // }
 
-
-
 //////  Assending number   ////////
+
+// void main(){
+//   var num = [11,23,45,65,34,89,14,34,43,10,20,];
+//   for(int a = 1; a<num.length; a++){
+//     for(int b = 1; b<=a; b++){
+//       if(num[a]<=num[b]){
+//         var n = num[a];
+//         num[a] = num[b];
+//         num[b] = n;
+//
+//       }
+//     }
+//   }
+//   for(int c in num){
+//     print(c);
+//   }
+// }
+
+// void main(){
+//   var num = [11,23,45,65,34,89,14,34,43,10,20,];
+//   for(int a = 0; a<num.length; a++){
+//     for(int b = 0; b<=a; b++){
+//       if(num[a]<=num[b]){
+//         var x = num[a];
+//         num[a] = num[b];
+//         num[b] = x;
+//       }
+//     }
+//   }
+//   for(int c in num){
+//     print(c);
+//   }
+// }
 
 // void main(){
 //   var num = [82,16,61,3,0,4];
@@ -1507,20 +1950,11 @@ void main(){
 //     print(c);
 //
 //   }
-// }
-
-
-
-
-
-
-
+//}
 
 ///////////funtion///////
 
-
 //////no argoment no return type/////
-
 
 // void main(){
 //   add();
@@ -1562,7 +1996,6 @@ void main(){
 
 ////with argoment with return type/////
 
-
 // void main(){
 //  print( add(15 ,20 ,25 ));
 //
@@ -1581,6 +2014,7 @@ void main(){
 // void main(){
 //   sum();
 // }
+
 // void sum (){
 //   var a = 2;
 //   var b = 10;
@@ -1605,7 +2039,6 @@ void main(){
 //  return n;
 // }
 
-
 ////with argoment no return type/////
 
 // vo id main(){
@@ -1617,7 +2050,6 @@ void main(){
 //   var n = a+b+c+d;
 //   print(n);
 // }
-
 
 //////no argoment no return type/////
 
@@ -1633,7 +2065,6 @@ void main(){
 //   print(n);
 // }
 
-
 ////no argoment with return type/////
 
 // void main(){
@@ -1647,7 +2078,6 @@ void main(){
 //   var n = a*b*c*d;
 //   return n;
 // }
-
 
 //////no argoment no return type/////
 
@@ -1665,7 +2095,6 @@ void main(){
 // }
 
 ////no argoment with return type/////
-
 
 // void main(){
 //  print( average());
@@ -1739,7 +2168,6 @@ void main(){
 //   }
 // }
 
-
 // void main(){
 //   primenumber();
 // }
@@ -1753,7 +2181,6 @@ void main(){
 //
 //   }
 // }
-
 
 // void main(){
 //   print(table(5));
@@ -1847,8 +2274,6 @@ void main(){
 //   print("$sumodd=sumodd");
 // }
 
-
-
 // void main() {
 //   printTable();
 // }
@@ -1864,8 +2289,6 @@ void main(){
 //   int a = 5;
 //   return a * b;
 // }
-
-
 
 /// Constructor Named Parameter
 
@@ -1886,7 +2309,6 @@ void main(){
 //   var n = Number.ten(2,4);
 //   print( n.addNumber());
 // }
-
 
 // class Number{
 //
@@ -1910,8 +2332,6 @@ void main(){
 //   print( n.addNumber());
 //
 // }
-
-
 
 // class BankAccount{
 //   num? balence;
@@ -1944,11 +2364,8 @@ void main(){
 //   print(pkbalence.getBalence()) ;
 // }
 
-
-
 // class class1{
-//
-//
+
 //   class1(){
 //     print("Hello");
 //   }
@@ -1956,13 +2373,11 @@ void main(){
 // print("I am Sonu");
 //   }
 // }
-//
-//
+
 // main(){
 //   var obj = class1();
 //   obj.fun1();
 // }
-
 
 ///parameteraized constructer
 
@@ -1978,13 +2393,10 @@ void main(){
 //     print("I am Sonu");
 //   }
 // }
-//
-//
 // main(){
 //   var obj = class1("Dright");
 //   obj.fun1();
 // }
-
 
 ///     default constructor   /////
 
@@ -2003,9 +2415,7 @@ void main(){
 //    sdfg.studentName();
 // }
 
-
 ///       Named Constructor   /////
-
 
 // class Person{
 //
@@ -2025,5 +2435,282 @@ void main(){
 //   print(p.getFullName());
 // }
 
+/// Gweter Mathod /////
 
+// class NoteBook{
+//   String? name;
+//   double? prize;
+//   NoteBook(this.name,this.prize);
+//   String get names => this.name!;
+//   double get price => this.prize!;
+// }
+//
+//
+// void main(){
+//   var nb= NoteBook("Vashali", 200);
+//   print(nb.name);
+//   print(nb.prize);
+//
+// }
 
+// class Person{
+//   String? name;
+//   int? age;
+//
+//   Person(this.name,this.age);
+//
+//   String get names => this.name!;
+//
+//   int get ages => this.age!;
+//
+//
+// }
+//
+// void main(){
+//   var ps = Person("Sonu Dright", 20);
+//   print(ps.name);
+//   print(ps.age);
+// }
+
+// class Person{
+//   String? name;
+//   int? age;
+//
+//   Person(this.name,this.age);
+//
+//   String get name {
+//     if(name == ""){
+//       return "No  name";
+//
+//
+//     }
+//     return this.name;
+//
+//
+//   }
+//
+//   int get ages => this.age!;
+//
+//
+// }
+//
+// void main(){
+//   var ps = Person("Sonu Dright", 20);
+//   print(ps.name);
+//   print(ps.age);
+// }
+
+/// Seter Mathod /////
+
+// class Student {
+//   // Private properties
+//   String? _name;
+//   int? _classnumber;
+//
+//   // Setter to update the value of name property
+//   set name(String name) => this._name = name;
+//
+//   // Setter to update the value of classnumber property
+//   set classnumber(int classnumber) {
+//     if (classnumber <= 0 || classnumber > 12) {
+//       throw ('Classnumber must be between 1 and 12');
+//     }
+//     this._classnumber = classnumber;
+//   }
+//
+//   // Method to display the values of the properties
+//   void display() {
+//     print("Name: $_name");
+//     print("Class Number: $_classnumber");
+//   }
+// }
+//
+// void main(){
+//   // Create an object of Student class
+//   Student s = new Student();
+//   // setting values to the object using setter
+//   s.name = "John Doe";
+//   s.classnumber = 12;
+//
+
+//   // Display the values of the object
+//   s.display();
+//
+//   // This will generate error
+//   //s.setClassNumber(13);
+// }
+
+///Seter//////////
+
+// class Student {
+//
+//   String? _name;
+//   int? _age;
+//
+//   set sname(String name) {
+//     _name = name;
+//   }
+//   set  sage(int age){
+//     _age=age;
+//
+//   }
+//
+//   void display() {
+//     print("Name: $_name");
+//     print("Age: $_age");
+//   }
+// }
+//
+//   void main() {
+//     var s = Student();
+//     s.sname = "Sonu Dright";
+//     s._age =  20;
+//     s.display();
+//   }
+
+// class Student {
+//    String? _name;
+//   int? _classnumber;
+//
+//    set name(String name) {
+//      _name = name;
+//    }
+//
+//    set classnumber(int classnumber) {
+//    _classnumber=classnumber;
+//
+//    }
+//
+//    void display() {
+//     print("Names: $_name");
+//     print("Class Numbers: $_classnumber");
+//   }
+// }
+// void main() {
+//    Student s = Student();
+//    s.name = "John Doe";
+//   s.classnumber = 12;
+//    s.display();
+// }
+
+/// FunTions ////
+
+///  No Parameeter not return type  ///////
+
+// void main(){
+//   add();
+// }
+//
+// void add(){
+//   var a = 10;
+//   var b = 20;
+//   var c = a+b;
+//   print(c);
+// }
+
+///   Parameeter not return type  ///////
+
+// void main(){
+//
+//   add(21, 25);
+// }
+//
+// void add( var a, var b){
+//   var c = a+b;
+//   print(c);
+//
+//
+// }
+
+///  No Parameeter  with return type  ///////
+
+// void main(){
+//  print( add());
+// }
+//
+// int add(){
+//   var a = 50;
+//   var b = 30;
+//   var c = a+b;
+//   return c;
+//
+// }
+
+///  with Parameeter  with return type  ///////
+
+// void main(){
+//  print(add(50, 20));
+// }
+//
+//
+// int add(var a, var b){
+//  var c = a-b;
+//  return c;
+// }
+
+///   Geter  and Seter        / ////
+
+// void main(){
+//   var num = [1,3,6,5,8,5,22,55,66,11,23,12,34,43,76,88,90,99];
+//   var min =0;
+//   var s = 0;
+//   for(int a = 1; a<num.length; a++ ){
+//     if(num[a]<min){
+//       s = min;
+//       min = num[a];
+//     }
+//     else if(min<num[a] && s >=num[a]){
+//       s = num[a];
+//     }
+//   }
+//   print(min);
+//   print(s);
+// }
+
+// void main(){
+//   var num = [6,3,8,5,4,900,108,12,15,18,20];
+//   var max = 0;
+//   var s = 0;
+//   for(int a = 1; a<num.length; a++){
+//     if(num[a]>=max){
+//      s = max;
+//      max = num[a];
+//     }
+//     else if (max>num[a] && s<num[a]){
+//       s = num[a];
+//
+//     }
+//
+//   }
+//
+//   print(s);
+// }
+
+///  Geter and  Seter /////
+
+// class Student{
+//   String? firstName;
+//   String? lastName;
+//   int? age;
+//
+//
+//   String get fullName(){
+//
+//   }
+// }
+
+// class person{
+//   String? name;
+//   int? age;
+//
+//   void greet(){
+//     print("Hello my name is  $name and i am $age years old");
+//   }
+// }
+//
+//
+// void main(){
+//   var p = person();
+//   p.name = "Sonu Dright";
+//   p.age = 20;
+// }

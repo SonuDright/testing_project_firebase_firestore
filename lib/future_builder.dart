@@ -11,7 +11,7 @@ class _HomeFutureState extends State<HomeFuture> {
   String imgUrl ="";
 
   Future<String>getData()async{
-    await Future.delayed(Duration(seconds: 2));
+    await Future.delayed(Duration(seconds: 3));
     imgUrl = "https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?cs=srgb&dl=pexels-pixabay-210019.jpg&fm=jpg";
 return imgUrl;
   }
@@ -23,21 +23,24 @@ return imgUrl;
         child: ListView(
           children: [
             SizedBox(height: 40,),
-            Container(
-              height: 480,
-              width: 380,
-              color: Colors.orange,
-              child: FutureBuilder(
+            Padding(
+              padding: const EdgeInsets.all(18.0),
+              child: Container(
+                height: 480,
+                width: 380,
+                color: Colors.orange,
+                child: FutureBuilder(
 
-                  future: getData(),
-                  builder: (context, snapshot) {
-                    if(snapshot.connectionState==ConnectionState.waiting){
-                      return Center(child: CircularProgressIndicator(),);
-                    }
-                    else{
-                      return Center(child:Image.network(imgUrl,fit: BoxFit.fill,),);
-                    }
-              }),
+                    future: getData(),
+                    builder: (context, snapshot) {
+                      if(snapshot.connectionState==ConnectionState.waiting){
+                        return Center(child: CircularProgressIndicator(),);
+                      }
+                      else{
+                        return Center(child:Image.network(imgUrl,fit: BoxFit.fill,),);
+                      }
+                }),
+              ),
             ),
             SizedBox(height: 30,),
             Center(

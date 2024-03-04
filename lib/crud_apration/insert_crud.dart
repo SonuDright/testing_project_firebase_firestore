@@ -7,9 +7,6 @@ import 'package:fluttertoast/fluttertoast.dart';
 
 class HomePageInsertCrud extends StatefulWidget {
   const HomePageInsertCrud({super.key});
-
-
-
   @override
 
   State<HomePageInsertCrud> createState() => _HomePageInsertCrudState();
@@ -18,7 +15,6 @@ class HomePageInsertCrud extends StatefulWidget {
 class _HomePageInsertCrudState extends State<HomePageInsertCrud> {
 
  var data = FirebaseFirestore.instance.collection("customers");
-
 
   TextEditingController nameController = TextEditingController();
   TextEditingController emailController = TextEditingController();
@@ -39,13 +35,11 @@ class _HomePageInsertCrudState extends State<HomePageInsertCrud> {
    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomePageViewData(),));
     Fluttertoast.showToast(msg: "Insert SuccessFull");
   });
-
     }
     catch(e){
       Fluttertoast.showToast(msg: "error");
     }
   }
-
   @override
   Widget build(BuildContext context) {
 

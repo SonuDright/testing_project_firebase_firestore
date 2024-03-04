@@ -27,7 +27,6 @@ class _HomeApiState extends State<HomeApi> {
       print("error");
     }
 
-
   }
   Future<void> getSingleDataApi(int id)async {
     // var res =await http.get(Uri.parse("https://jsonplaceholder.typicode.com/posts?id=$id"),headers: {},);
