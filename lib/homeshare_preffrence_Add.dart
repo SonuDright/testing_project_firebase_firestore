@@ -20,7 +20,7 @@ class _HomeSharePrefAddState extends State<HomeSharePrefAdd> {
       body: SafeArea(child: Column(
         children: [
           SizedBox(height: 20),
-          Center(child: Text("GeT Data",style: TextStyle(color: Colors.black,fontSize: 30,fontWeight: FontWeight.bold),),),
+          Center(child: Text(    "GeT Data",style: TextStyle(color: Colors.black,fontSize: 30,fontWeight: FontWeight.bold),),),
           SizedBox(height: 30),
 
 
@@ -29,7 +29,6 @@ class _HomeSharePrefAddState extends State<HomeSharePrefAdd> {
           Center(child: Text("$pinCod")),
           Center(child: Text("$checkBox")),
           SizedBox(height: 20),
-
           Center(
             child: ElevatedButton(onPressed: () {
               getMyName ();

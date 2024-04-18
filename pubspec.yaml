@@ -49,6 +49,10 @@ dependencies:
   google_maps_flutter: any
   geolocator: ^11.0.0
   geocoding: ^2.2.0
+  flutter_local_notifications: ^17.0.0
+  app_settings: ^5.1.1
+  firebase_messaging: ^14.8.1
+  firebase_auth: ^4.20.0
 
 dev_dependencies:
   flutter_test:
@@ -71,6 +75,7 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+
 
   # To add assets to your application, add an assets section, like this:
   # assets:

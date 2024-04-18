@@ -45,6 +45,7 @@ class _HomeApiState extends State<HomeApi> {
   }
 
   Future<void> postApi(String id, MyModel data)async {
+
     var res =await http.post(Uri.parse("https://jsonplaceholder.typicode.com/posts?id=$id"),headers: {},body: data.toJson());
 
     if(res.statusCode==200){

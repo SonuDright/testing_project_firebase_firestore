@@ -14,7 +14,7 @@ class _HomeApiScreenState extends State<HomeApiScreen> {
   List<WelcomeModel> usModels = <WelcomeModel>[];
 
   Future<void> getTestApi() async {
-    Uri url = Uri.parse("https://jsonplaceholder.typicode.com/comments");
+    var url = Uri.parse("https://jsonplaceholder.typicode.com/comments");
     var rec = await http.get(url);
     if (rec.statusCode == 200) {
       List<dynamic> getList = jsonDecode(rec.body);

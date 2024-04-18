@@ -12,10 +12,10 @@ class HomeSharePreffrence extends StatefulWidget {
 class _HomeSharePreffrenceState extends State<HomeSharePreffrence> {
   TextEditingController nameController = TextEditingController();
 
-  @override
-  void initState() {
-    super.initState();
-  }
+  // @override
+  // void initState() {
+  //   super.initState();
+  // }
 
   var myName = "";
 
