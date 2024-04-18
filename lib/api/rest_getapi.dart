@@ -52,7 +52,8 @@ class _HomeRestApiState extends State<HomeRestApi> {
       print(postList);
       setState(() {
 
-        userPostModel = postList.map((e) => UserPostModel.fromJson(e)).toList();
+       userPostModel = postList.map((e) => UserPostModel.fromJson(e)).toList();
+        userPostModel = postList.map((e)=> UserPostModel.fromJson(e)).toList();
       });
       print(userPostModel);
     } else {
@@ -60,6 +61,11 @@ class _HomeRestApiState extends State<HomeRestApi> {
 
     }
   }
+
+
+
+
+
 }
 
 

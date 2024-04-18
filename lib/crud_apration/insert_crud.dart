@@ -15,7 +15,6 @@ class HomePageInsertCrud extends StatefulWidget {
 class _HomePageInsertCrudState extends State<HomePageInsertCrud> {
 
  var data = FirebaseFirestore.instance.collection("customers");
-
   TextEditingController nameController = TextEditingController();
   TextEditingController emailController = TextEditingController();
   TextEditingController phoneController = TextEditingController();
@@ -36,6 +35,7 @@ class _HomePageInsertCrudState extends State<HomePageInsertCrud> {
     Fluttertoast.showToast(msg: "Insert SuccessFull");
   });
     }
+
     catch(e){
       Fluttertoast.showToast(msg: "error");
     }
@@ -49,6 +49,7 @@ class _HomePageInsertCrudState extends State<HomePageInsertCrud> {
 
         child: ListView(
           children: [
+
             const SizedBox(
               height: 40,
             ),
@@ -84,7 +85,7 @@ class _HomePageInsertCrudState extends State<HomePageInsertCrud> {
                 child: TextField(
                   keyboardType: TextInputType.emailAddress,
                   controller: emailController,
-                  decoration: const InputDecoration(
+                  decoration:  const InputDecoration(
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.circular(10)),
                     ),
@@ -96,6 +97,7 @@ class _HomePageInsertCrudState extends State<HomePageInsertCrud> {
             Center(
 
               child: Padding(
+
                 padding: EdgeInsets.only(left: 20, right: 20, top: 20),
                 child: TextField(
                   keyboardType: TextInputType.phone,
@@ -115,7 +117,7 @@ class _HomePageInsertCrudState extends State<HomePageInsertCrud> {
                 child: TextField(
                   keyboardType: TextInputType.number,
                   controller: passWordController,
-                  decoration:   InputDecoration(
+                  decoration:   const InputDecoration(
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.circular(10)),
                     ),

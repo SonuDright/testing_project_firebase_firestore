@@ -1,5 +1,4 @@
 
-import 'package:firebase_firestore/create_table_sqflite.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 

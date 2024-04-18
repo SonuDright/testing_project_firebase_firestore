@@ -31,12 +31,14 @@ class _HomeLoginSQLITEState extends State<HomeLoginSQLITE> {
                     )
                 ),),
             ),
+            SizedBox(height: 20,),
+
             Center(
               child: TextField(
                 controller: passWordController,
                 keyboardType: TextInputType.number,
                 decoration: InputDecoration(
-                    labelText: "Enter Your Phone",
+                    labelText: "Enter Your PassWord",
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.circular(10)),
                     )
@@ -51,22 +53,10 @@ class _HomeLoginSQLITEState extends State<HomeLoginSQLITE> {
                     Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomeScreen(),));
 
                   }
-
                 });
-
-
-
-
-
 
               }, child: Text("Login Now")),
             ),
-
-
-
-
-
-
 
           ],
         ),
